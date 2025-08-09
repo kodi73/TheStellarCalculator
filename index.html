@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stellar Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: block;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <audio id="blackHoleSound" src="blackhole.mp3"></audio>
+    <div class="main-container">
+        <div class="calculator">
+            <div class="screen">
+                <p id="resultText"></p>
+                <p id="operationText"></p>
+            </div>
+
+            <div class="buttons">
+                <button id="num">7</button>
+                <button id="num">8</button>
+                <button id="num">9</button>
+                <button id="operator">*</button>
+                <button id="num">4</button>
+                <button id="num">5</button>
+                <button id="num">6</button>
+                <button id="operator">/</button>
+                <button id="num">1</button>
+                <button id="num">2</button>
+                <button id="num">3</button>
+                <button id="operator">+</button>
+                <button id="num">0</button>
+                <button id="clear">C</button>
+                <button id="equal">=</button>
+                <button id="operator">-</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="bg" class="layer"></canvas>
+    <canvas id="fg" class="layer"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
